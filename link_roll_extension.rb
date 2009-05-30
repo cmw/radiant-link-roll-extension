@@ -11,6 +11,8 @@ class LinkRollExtension < Radiant::Extension
       link.link_index   'admin/links',              :action => 'index'
       link.link_new     'admin/links/new',          :action => 'new'
       link.link_edit    'admin/links/edit/:id',     :action => 'edit'
+      link.link_create  'admin/links/create',       :action => 'create'
+      link.link_update  'admin/links/update/:id',   :action => 'update'
       link.link_remove  'admin/links/remove/:id',   :action => 'remove'
     end
   end
