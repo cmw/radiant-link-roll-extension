@@ -18,4 +18,9 @@ module LinkRollTags
     link = tag.locals.link
     %{<a href="#{link.url}" title="#{link.description}">#{link.title}</a>}
   end
+
+  tag 'links:each:description' do |tag|
+    link = tag.locals.link
+    link.description
+  end
 end
